@@ -18,6 +18,7 @@ const PATTERN = [
 
 export const Timer = ({ focusSubject, clearSubject, onTimerEnd }) => {
   useKeepAwake();
+  console.log('yolo';)
   const [isStarted, setIsStarted] = useState(false);
   const [progress, setProgress] = useState(1);
   const [minutes, setMinutes] = useState(0.1);
